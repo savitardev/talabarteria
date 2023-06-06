@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100%
+  max-height: 100vh
 }
 
 .card {
@@ -115,10 +115,6 @@ body {
 /* Fin animacion slider */
 
 @media (max-width: 768px) {
-  .carousel-inner {
-    height: 200px;
-    /* Tamaño para dispositivos móviles */
-  }
 
   .col {
     display: flex;
@@ -163,7 +159,7 @@ body {
   }
 }
 
-@media (min-width: 577px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
   /* Estilos para dispositivos SM */
   .slider {
@@ -213,5 +209,18 @@ form {
   -moz-box-shadow: 10px 7px 34px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 7px 34px -12px rgba(0, 0, 0, 0.75);
 }
+
+.container-mobile {
+  padding: 0 15px;
+  /* Ajusta el valor del margen según tus preferencias */
+}
+
+.container-custom {
+  max-width: 800px;
+  /* Tamaño personalizado para el contenedor */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Fin de seccion de contacto */
