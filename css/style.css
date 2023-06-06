@@ -1,0 +1,142 @@
+:root {
+    --max: 18rem
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%
+}
+
+.card {
+    width: var(--max)
+}
+
+.card-img-top {
+    width: 100%;
+    max-width: var(--max);
+    height: calc(var(--max));
+    object-fit: cover;
+}
+
+/* .carousel-inner img {
+    max-width: 1000px;
+    max-height: 560px;
+}
+
+.carousel-inner {
+    height: 560px;
+} */
+
+/* Inicio animacion slider */
+.slider {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* Fondo negro con opacidad */
+}
+
+.slider img {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slider img.active {
+    opacity: 1;
+}
+
+.slider .move-image-1 {
+    transform: translate(0, -80px);
+    /* Mueve la imagen 80px hacia arriba */
+}
+
+.slider .move-image-2 {
+    transform: translate(0, -80px);
+    /* Mueve la imagen 80px hacia arriba */
+}
+
+.slider .move-image-3 {
+    transform: translate(0, -200px);
+    /* Mueve la imagen 200px hacia arriba */
+}
+
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.controls .arrow-left,
+.controls .arrow-right {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.controls .arrow-left:before,
+.controls .arrow-right:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+}
+
+.controls .arrow-left:before {
+    border-right-color: #fff;
+    border-left-width: 8px;
+    margin-left: -4px;
+}
+
+.controls .arrow-right:before {
+    border-left-color: #fff;
+    border-right-width: 8px;
+    margin-left: 8px;
+}
+
+.controls .arrow-left:hover,
+.controls .arrow-right:hover {
+    background-color: #555;
+}
+
+/* Fin animacion slider */
+
+@media (max-width: 768px) {
+    .carousel-inner {
+        height: 200px;
+        /* Tamaño para dispositivos móviles */
+    }
+
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+    /* Estilos para dispositivos SM */
+    .carousel-inner {
+        height: 300px;
+        /* Tamaño para dispositivos móviles */
+    }
+}
+
+span.precio {
+ font-weight: 800;
+}
