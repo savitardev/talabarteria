@@ -55,28 +55,30 @@
   <!-- Inicio de formulario de contacto -->
   <h1 class="text-center mb-3">Contactame para productos personalizados</h1>
   <div class="container-mobile container-custom">
-    <form class="p-4">
+    <form class="p-4" action="https://formsubmit.co/1ed3af48b31837f2941273e3577f39b8" method="POST">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" required>
+        <input type="text" name="nombre" class="form-control" id="nombre" required>
       </div>
       <div class="mb-3">
         <label for="apellidoPaterno" class="form-label">Apellido Paterno</label>
-        <input type="text" class="form-control" id="apellidoPaterno" required>
+        <input type="text" name="apellidoPaterno" class="form-control" id="apellidoPaterno" required>
       </div>
       <div class="mb-3">
         <label for="apellidoMaterno" class="form-label">Apellido Materno</label>
-        <input type="text" class="form-control" id="apellidoMaterno" required>
+        <input type="text" name="apellidoMaterno" class="form-control" id="apellidoMaterno" required>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" required>
+        <input type="email" name="email" class="form-control" id="email" required>
       </div>
       <div class="mb-3">
         <label for="producto" class="form-label">¿Qué producto personalizado desea?</label>
-        <textarea class="form-control" id="producto" rows="3" required></textarea>
+        <textarea name="producto" class="form-control" id="producto" rows="3" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <input type="submit" class="btn btn-primary" value="Enviar">
+      <input type="hidden" name="_next" class="btn btn-primary" value="http://127.0.0.1:5500/contacto.html">
+      <input type="hidden" name="_captchat" class="btn btn-primary" value="flase">
     </form>
   </div>
   <!-- Fin de formulario de contacto -->
